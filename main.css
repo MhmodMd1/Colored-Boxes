@@ -1,0 +1,273 @@
+
+
+.parent {
+    height: 1500px;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.float {
+    width: 400px;
+    height: 200px;
+    background-color: black;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container div {
+    color: white;
+}
+
+.one {
+    background-color: #1ABC9C;
+}
+
+.two {
+    background-color: #E67E22;
+}
+
+.three {
+    background-color: #27AE60;
+}
+
+.four {
+    background-color: #F39C12;
+}
+
+.five {
+    background-color: #F39C12;
+}
+
+.six {
+    background-color: #8E44AD;
+}
+
+.seven {
+    background-color: #2C3E50;
+}
+
+.eight {
+    background-color: #C0392B;
+}
+
+
+.float .one {
+    background-color: #1ABC9C;
+    width: 30%;
+    height: 50%;
+    float: left;
+    line-height: 100px;
+}
+
+.float .two {
+    background-color: #E67E22;
+    width: 50%;
+    height: 25%;
+    float: left;
+    line-height: 50px;
+}
+
+.float .three {
+    background-color: #27AE60;
+    width: 50%;
+    height: 25%;
+    float: left;
+    line-height: 50px;
+}
+
+
+
+.float .four {
+    background-color: #F39C12;
+    width: 20%;
+    height: 50%;
+    float: left;
+    margin-top: -12.5%;
+    line-height: 100px;
+}
+
+.float .five {
+    background-color: #F39C12;
+    width: 40%;
+    height: 25%;
+    float: left;
+    line-height: 50px;
+}
+
+.float .six {
+    background-color: #8E44AD;
+    width: 20%;
+    height: 25%;
+    float: left;
+    line-height: 50px;
+}
+
+.float .seven {
+    background-color: #2C3E50;
+    width: 60%;
+    height: 25%;
+    float: left;
+    line-height: 50px;
+}
+
+.float .eight {
+    background-color: #C0392B;
+    width: 40%;
+    height: 50%;
+    float: left;
+    margin-top: -12.5%;
+    line-height: 100px;
+}
+.flexbox {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: black;
+}
+.flexbox .flex-one {
+    height: 50%;
+    background-color: green;
+    width: 100%;
+    display: flex;
+}
+.flexbox .flex-two {
+    height: 50%;
+    background-color: red;
+    width: 100%;
+    display: flex;
+}
+.flexbox .flex-one .flex-one-in {
+    width: 50%;
+    height: 100%;
+    order: 2;
+}
+.flexbox .flex-two .flex-two-in {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flexbox .one {
+    background-color: #1ABC9C;
+    width: 30%;
+    height: 100%;
+    order: 1;
+}
+
+.flexbox .two {
+    background-color: #E67E22;
+    width: 100%;
+    height: 50%;
+}
+
+.flexbox .three {
+    background-color: #27AE60;
+    width: 100%;
+    height: 50%;
+}
+
+.flexbox .four {
+    background-color: #F39C12;
+    width: 20%;
+    height: 100%;
+    order: 4;
+}
+
+.flexbox .five {
+    background-color: #F39C12;
+    width: 70%;
+    height: 50%;
+}
+
+.flexbox .six {
+    background-color: #8E44AD;
+    width: 30%;
+    height: 50%;
+}
+
+.flexbox .seven {
+    background-color: #2C3E50;
+    width: 100%;
+    height: 50%;
+}
+
+.flexbox .eight {
+    background-color: #C0392B;
+    width: 40%;
+    height: 100%;
+}
+
+.flexbox div:not(.flex-one-in) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    width: 400px;
+    height: 200px;
+    grid-template-areas: 
+    "one one one two two two two two four four " 
+    "one one one two two two two two four four "
+    "one one one two two two two two four four "
+    "one one one three three three three three four four"
+    "one one one  three three three three three four four " 
+    "one one one  three three three three three four four " 
+    "five five five five six six eight eight eight  eight"
+    "five five five  five six six eight eight eight  eight " 
+    "five five five five six six eight eight eight  eight "
+    "seven seven seven seven seven seven eight eight eight  eight"
+    "seven seven seven seven seven seven eight eight eight  eight " 
+    "seven seven seven seven seven seven eight eight eight  eight "  
+        ;
+}
+
+.grid div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid .one {
+    grid-area: one;
+}
+
+.grid .two {
+    grid-area: two;
+}
+
+
+.grid .three {
+    grid-area: three;
+}
+
+.grid .four {
+    grid-area: four;
+}
+
+.grid .five {
+    grid-area: five;
+}
+
+.grid .six {
+    grid-area: six;
+}
+
+
+.grid .seven {
+    grid-area: seven;
+}
+
+.grid .eight {
+    grid-area: eight;
+}
